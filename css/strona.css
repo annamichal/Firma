@@ -1,147 +1,112 @@
-body {
-	background-color: #E9ECEF;
-}
+<!doctype html>
+<html lang="pl">
 
-#header {
-	position: fixed;
-	justify-content: center;
-	background-color: #E9ECEF;
-	z-index: 10;
-	width: 100%;
-	height: 100px;
-	margin:auto;
-	align-items: center;
-}
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-.container-main {
-	width: 100%;
-	padding-top: 100px;
-	color: darkslategrey;
-}
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-#form {
-	padding: 0 10vw 5vw 10vw;
-	text-align: center;
-}
+	<!-- Responsive meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-img {
-	width: 200px;
-	height: 50px;
-	margin: auto;
-	display: flex;
-}
+	<!--Odwołnanie do css-->
+	<link rel="stylesheet" href="css/strona.css">
 
-.nav-link {
-	text-align: center;
-	padding: .1rem;
-	font-size: 20px;
-	color: darkslategrey;
-	font-style: italic;
-}
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-.avesome {
-	color: red;
-	font-size: 50px;
-}
+	<title>Product</title>
+</head>
 
-.lorem {
-	text-align: left;
-}
+<body>
 
-#nav-bar {
-	align-self: center;
-	justify-content: flex-end;
-}
+	<header id="header" class="row justify-content-center">
+		<div class="col-12 col-sm-4 col-md-2">
+			<img src="assets/firma.jpg" alt="" id="header-img">
+		</div>
+		<nav id="nav-bar" class="nav col-12 col-sm-7 col-md-8">
+			<a class="nav-link" href="#about1">O nas</a>
+			<a class="nav-link" href="#about2">Produkty</a>
+			<a class="nav-link" href="#form">Więcej</a>
+		</nav>
+	</header>
 
-main {
-	padding: 25px;
-	text-align: center;
-}
+	<main id="about1" class="container-main">
+		<div class="row title">
+			<h1 class="col-12">Wszystko czego potrzebujesz znajdziesz w&nbsp;Firmie
+			</h1>
+		</div>
+		<div class="row about">
+			<div class="col-12 col-sm-4 col-md-2 offset-md-2"><i class="fab fa-asymmetrik avesome"></i></div>
+			<div class="col-12 col-sm-7 col-md-6 lorem">
+				<h4>Co musisz wiedzieć o nas</h4>
+				<h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, possimus officia aspernatur quasi ut adipisci a eos, perspiciatis enim eveniet sit, excepturi cum sint aut? Repellendus, minima.</h6>
+			</div>
+		</div>
+		<div id="video" class="row justify-content-center">
+			<div class="embed-responsive embed-responsive-16by9 col-12 col-sm-10 col-md-8">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/SGPjFFMD3c0?rel=0&amp;controls=0&amp;showinfo=0"></iframe>
+			</div>
+		</div>
+		<div class="row about">
+			<div class="col-12 col-sm-4 col-md-2 offset-md-2"><i class="far fa-thumbs-up avesome"></i></div>
+			<div class="col-12 col-sm-8 col-md-6 lorem">
+				<h4>Gwarancja najwyższej jakości</h4>
+				<h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. lorem15 Repellendus, minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa rerum, harum quasi, eum odit suscipit.</h6>
+			</div>
+		</div>
+		<div id="about2" class="row">
+			<div class="col-12 col-sm-4 col-md-2 offset-md-2"><i class="fas fa-shipping-fast avesome"></i></div>
+			<div class="col-12 col-sm-8 col-md-6 lorem">
+				<h4>Gwarancja bezproblemowej dostawy</h4>
+				<h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, </h6>
+			</div>
+		</div>
+		<div class="row">
+			<div class="card col-12 col-md-4">
+				<img class="card-img-top" src="assets/bruno-van-der-kraan-611161-unsplash.jpg" alt="Bruno van der Kraan">
+				<div class="card-body">
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur rem sapiente, ducimus ab ullam, ad?</p>
+				</div>
+			</div>
+			<div class="card col-12 col-md-4">
+				<img class="card-img-top" src="assets/ricky-kharawala-55307-unsplash.jpg" alt="Ricky Kharwala">
+				<div class="card-body">
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aperiam sed, consequatur quos autem similique.</p>
+				</div>
+			</div>
+			<div class="card col-12 col-md-4">
+				<img class="card-img-top" src="assets/pat-taylor-645120-unsplash.jpg" alt="Pat Taylor">
+				<div class="card-body">
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione numquam eligendi tempora quam, harum culpa.</p>
+				</div>
+			</div>
+		</div>
+	</main>
 
-.about, #about2 {	
-	padding: 30px;
-}
-
-.card {
-	padding: 10px;
-	border-width: 20px;
-	border-color: #E9ECEF;
-	background-color: #E9ECEE;
-}
-
-.card-img-top {
-	max-width: 100%
-	display: block;
-	height: auto;
-	padding: 10px;
-}
-
-@media (max-width: 576px) {
-	#nav-bar {
-		display: block;
-	}
-	#header {
-		height: 200px;
-	}
-	.container-main {
-	padding-top: 200px;
-	}
-	.avesome {
-		color: red;
-		font-size: 30px;
-	}
-	.lorem {
-		text-align: center;
-	}
-	h1 {
-		font-size: 28px;
-	}
-	h4 {
-		font-size: 20px
-	}
-	h6 {
-		font-size: 14px;
-	}
-}
-
-@media (min-width: 576px) {
-	.nav-link {
-		text-align: center;
-		padding: .1rem;
-		font-size: 24px;
-		width: 100px;
-		font-style: italic;
-	}
-}
-
-@media (min-width: 768px) {
-	img {
-		width: 300px;
-		height: 50px;
-	}
-	h1 {
-		font-size: 28px;
-	}
-	h4 {
-		font-size: 24px
-	}
-	h6 {
-		font-size: 18px;
-	}
-}
-
-.btn-primary {
-	width: 150px;
-}
-
-footer {
-	text-align: center;
-	padding: 10px;
-	border-radius: 5px;
-	margin-bottom: 10px;
-}
-
-.unsplash {
-	color: lightslategrey;
-	font-size: 12px;
-}
+	<form id="form" action="https://www.freecodecamp.com/email-submit" method="post" autocomplete="off">
+		<div class="form-group row">
+			<label class="col-12 col-md-6">Aby uzyskać więcej informacji podaj&nbsp;swój&nbsp;adres&nbsp;e-mail:&nbsp;</label>
+			<div class="col-12 col-md-6">
+				<input type="email" class="form-control is-valid" id="email" name="e-mail" placeholder="Wpisz adres e-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+			</div>
+		</div>
+		<div id="submit" class="col-12">
+			<button type="submit" class="btn btn-primary">Wyślij</button>
+		</div>
+	</form>
+	<footer class="container">
+		<p class="unsplash">Photos by:</p>
+		
+		<a style="background-color:lightslategrey;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@sweetmangostudios?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Ricky  Kharawala"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Ricky  Kharawala</span></a>
+		
+		
+		<a style="background-color:lightslategrey;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@brunovdkraan?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Bruno van der Kraan"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Bruno van der Kraan</span></a>
+		
+		<a style="background-color:lightslategrey;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@ptaylor_?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Pat Taylor"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Pat Taylor</span></a>
+	</footer>
+	
+</body>
+</html>
