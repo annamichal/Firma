@@ -130,7 +130,7 @@ main {
 	h6 {
 		font-size: 18px;
 	}
-	p {
+	p, #form {
 		font-size: 18px;
 	}
 }
